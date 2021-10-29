@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Document</title>
+    <script>
+        function counter() {
+
+            // function을 먼저 임의로 만든 후
+            // 필요한 곳에 적용한다. 괄호까지 입력해야 정상적으로 작동한다.
+            // function의 길이가 길어져 반복 작성하는 데 불편함을 줄이기 위해
+            // 이를 변수/상수에 저장하여 필요할 때마다 꺼내어 사용한다.
+            const temp = Number(document.getElementById("count").innerText) + 1
+            document.getElementById("count").innerText = temp
+
+        }
+        
+        // ==========================================================================================================================
+
+        </script>
+</head>
+<body>
+    <div id="count">0</div>
+    <button onclick="counter()">숫자 올리기</button>
+
+    <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>포커스 맞추기</title>
+    <script>
+        // function changePhone1() {
+        //     const phone1 = document.getElementById("phone1").value
+            
+            
+        //     if(phone1.length === 3) {
+        //         // 커서를 해당 위치에 배치시키는 명령어 focus()
+        //         document.getElementById("phone2").focus()    
+        //     }
+        // }
+        
+        // function changePhone2() {
+        //     const phone2 = document.getElementById("phone2").value
+            
+        //     if(phone2.length === 4) {
+        //         document.getElementById("phone3").focus()
+        //     }
+        // }
+        
+        // ================================================================================================================
+        
+        // 하나의 함수로 통합
+        function moveCursor() {
+            const phone1 = document.getElementById("phone1").value
+            const phone2 = document.getElementById("phone2").value
+
+            if(phone1.length === 3) {
+                document.getElementById("phone2").focus()
+
+                if(phone2.length === 4)
+                document.getElementById("phone3").focus()
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    <!-- size는 보여주기만 하는 크기 조절 속성-->
+    <!-- maxlength는 입력할 수 있는 글자 수를 제한하는 속성 -->
+    <input id="phone1" type="text" size="3" maxlength="3" oninput="moveCursor()"/> - 
+    <input id="phone2" type="text" size="4" maxlength="4" oninput="moveCursor()"/> - 
+    <input id="phone3" type="text" size="4" maxlength="4" oninput="moveCursor()"/>
+</body>
+</html>

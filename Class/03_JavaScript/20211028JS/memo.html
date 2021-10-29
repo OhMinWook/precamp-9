@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>돔(DOM) 조작하기</title>
+    <script>
+        let isActive = false
+        const aaa = () => {
+
+            if(isActive === false){
+                isActive = true
+
+                const token = String(Math.floor(Math.random() * 1000000)).padStart(6, "0")
+                document.getElementById("qqq").innerText = token
+
+                let time = 130
+                setInterval(function(){
+                    const minutes = String(Math.floor(time / 60)).padStart(2, "0")
+                    const seconds = String(time % 60).padStart(2, "0")
+                    if(time >= 0){
+                        document.getElementById("zzz").innerText = minutes + ":" + seconds
+                        time = time - 1
+                    }
+                }, 1000)
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="qqq">000000</div>
+    <button onclick="aaa()">클릭하기</button>
+    <div id="zzz">10</div>
+</body>
+</html>

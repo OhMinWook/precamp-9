@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Documen\</title>
+    <script>
+
+        let isActive = false
+
+        function Timer() {
+
+            if(isActive === false) {
+
+                isActive = true
+
+                // 무작위로 인증번호 생성 코드
+                const token = String(Math.floor(Math.random() * 1000000)).padStart(6, "0")
+                document.getElementById("submit").innerText = token
+
+                // 전체 시간을 초로 환산해서 변수에 저장
+                let time = 180
+
+                // 지정된 시간 동안 반복되는 시간반복함수 생성(setInterval)
+                setInterval(function() {
+                    
+                    
+                    // 시간이 0이 되어서 끝날 때 제어할 수 있는 조건문 작성
+                    if(time > 0) {
+                        time = time - 1
+                        
+                        // 환산된 초를 다시 분과 초로 나누어 표기할 변수 지정
+                        // 초가 한자리 수일 때 앞에 0이 표기된 채 타이머 작동(padStart)
+                        // padStart는 문자열일 때 가능하므로 String으로 문자열로 변환해준다.
+                        const minutes = String(Math.floor(time / 60)).padStart(2, "0")
+                        const seconds = String(time % 60).padStart(2, "0")
+
+                        // 브라우저에 나타나게 되는 코드
+                        const originTime = document.getElementById("seconds").innerText
+                        originTime = minutes + ":" + seconds
+                        
+                        // // 시간 활성화시 버튼 활성화 / 비활성화
+                        // const target = document.getElementById("target_btn")
+                        // target.disabled = true
+
+                        // // 시간이 끝났을 때 버튼을 다시 활성화할 조건문
+                        // if(time === 0) {
+
+                        //     target.disabled = false
+
+                        // }
+
+                    }
+
+                    // 반복될 시간 지정
+                }, 1000)
+
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <span id="submit">000000 </span><span><button id="target_btn" onclick="Timer()">인증번호 전송</button></span>
+    <div id="seconds">3:00</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* 대부분의 기업에서 적용하는 standard */
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    /* background-color: skyblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.wrapper__head {
+    width: 464px;
+    height: 52px;
+    /* background-color: red;    */
+}
+
+.wrapper__head__upper {
+    padding-left: 5px;
+}
+
+.updated {
+    color: skyblue;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.story {
+    color: black;
+    font-size: 5px;
+    font-style: oblique;
+    padding-left: 5px;
+}
+
+.line {
+    border-top: 1px solid black;
+    margin-top: 8px;
+    margin-left: 6px;
+}
+
+.status {
+    font-size: 11px;
+    padding-left: 6px;
+    padding-top: 8px;
+}
+
+.wrapper__body {
+    width: 464px;
+    height: 270px;
+    /* background-color: skyblue; */
+    /* padding-bottom: 26px; */
+}
+
+.wrapper__body__title {
+    font-size: 17px;
+    font-weight: 700;
+    font-style: normal;
+    color: skyblue;
+    padding-left: 6px;
+    padding-right: 5px;
+}
+
+.wrapper__body__subtitle {
+    font-size: 8px;
+    font-weight: 400;
+    font-style: normal;
+    font-style: oblique;
+}
+
+.video_content {
+    width: 464px;
+    height: 222px;
+    /* background-color: #999; */
+    margin-top: 8px;
+    margin-left: 6px;
+}
+

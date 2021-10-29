@@ -1,0 +1,203 @@
+.background {
+    /* 상위 폴더 ../ */
+    background-image: url('../Images/background.png');
+    width: 1024px;
+    height: 600px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.outerbox {
+    width: 808px;
+    height: 544px;
+    background-image: url(../Images/outerbox.png);
+}
+
+.wrapper {
+    display: flex;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.wrapper__left {
+    width: 208px;
+    height: 472px;
+    background-color: #EEEEEE;
+    padding-left: 6px;
+    border-radius: 10px;
+    margin-right: 0px;
+}
+
+.lookup {
+    font-size: 9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: skyblue;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.zero {
+    color: red;
+    font-size: 9px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.count {
+    color: black;
+    font-size: 9px;
+    padding-left: 3px;
+}
+
+.content__left {
+    width: 202px;
+    height: 434px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    
+}
+
+#information {
+    width: 144px;
+    height: 269px;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.profile {
+    width: 148px;
+    height: 133px;
+    background-color: #999;
+    margin-bottom: 12px;
+}
+
+hr {
+    width: 148px;
+    height: 0px;
+    border: 1px dashed gray;
+    
+}
+
+.detail {
+    padding-top: 2px;
+    color: gray;
+}
+
+.list {
+    padding-top: 4px;
+    font-size: 3px;
+}
+
+#selection {
+    width: 144px;
+    height: 40px;
+    /* background-color: aquamarine; */
+    padding-bottom: 31px;
+}
+
+.ment {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.selected {
+    width: 148px;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+.wrapper__right {
+    z-index: 1;
+
+}
+
+
+.wrapper__right__header {
+	padding-top: 10px;
+	width: 510px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wrapper__right__title {
+	padding-left: 40px;
+	color: #55b2d4;
+	font-weight: 700;
+	font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.wrapper__right__setting {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.wrapper__right__body {
+	width: 524px;
+	height: 430px;
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 15px;
+}
+
+.bbbb {
+    color: red;
+}
+
+iframe {
+    /* 자식인 경우 부모의 기준으로 비율을 따진다. */
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.navigation {
+    width: 62px;
+    height: 100px;
+    /* background-color: blue; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: absolute;
+    /* 왼쪽에서 784px만큼 오른쪽으로 이동 */
+    left: 791px;
+    /* 위에서부터 100px만큼 아래로 이동 */
+    top: 110px;
+
+}
+
+.navigation__item {
+    width: 60px;
+    height: 30px;
+    /* 박스의 높이와 줄 높이를 같게 해주면 가운데에 위치하게 된다. */
+    line-height: 30px;
+    background-color: #298EB5;
+    
+    font-size: 10px;
+    color: white;
+    border: 1px solid #000000;
+     /* 마우스 올렸을 때 손가락 나오게 해준다 */
+    cursor: pointer;
+    text-align: center;
+    /* 가장 왼쪽부터 시작점이다. */
+    border-radius: 0px 10px 10px 0px;   
+}
+
+
+
